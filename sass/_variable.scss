@@ -1,19 +1,22 @@
 @charset "UTF-8";
+@import "compass";
 
 $body-mwidth : 1200px;
 $body-mheight : 600px;
 
-@mixin simple-mediacy($tt: -50%, $tl: -50%){
+@mixin simple-mediacy($mt: 0, $ml: 0){
 	position: absolute;
-	top: 50%;
-	left: 50%;
+	top: $mt;
+	left: $ml;
 }
 
 @mixin mediacy($tt: -50%, $tl: -50%){
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	@include translate($tt, $tl);
+	@if $tt or $tl{
+		@include translate($tt, $tl);
+	}
 }
 
 @mixin fixpos($os-top: 0, $os-left: 0) {
@@ -26,7 +29,7 @@ $body-mheight : 600px;
   }
 }
 
-@mixin ropepos($r-width: 0, $r-height: 0, $r-bgi: 0) {
+@mixin whb($r-width: 0, $r-height: 0, $r-bgi: 0) {
   @if $r-width {
     width: $r-width;
   }
@@ -36,4 +39,36 @@ $body-mheight : 600px;
   @if $r-bgi {
     background: $r-bgi left top no-repeat;
   }
+}
+
+@mixin rockm{
+	@include keyframes(rock){
+		0%{
+			@include rotate(0deg)
+		}
+		10%{
+			@include rotate(3deg)
+		}
+		20%{
+			@include rotate(-3deg)
+		}
+		30%{
+			@include rotate(2deg)
+		}
+		40%{
+			@include rotate(-2deg)
+		}
+		50%{
+			@include rotate(1deg)
+		}
+		60%{
+			@include rotate(-1deg)
+		}
+		70%{
+			@include rotate(0deg)
+		}
+		100%{
+			@include rotate(0deg)
+		}
+	}
 }

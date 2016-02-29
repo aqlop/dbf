@@ -2,62 +2,6 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-html {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-q, blockquote {
-  quotes: none;
-}
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-a img {
-  border: none;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
 body {
   background: #000;
   min-width: 1200px;
@@ -85,6 +29,143 @@ body {
   left: 700px;
 }
 
+.rdbox-rock {
+  -moz-animation: rock 2s infinite;
+  -webkit-animation: rock 2s infinite;
+  animation: rock 2s infinite;
+}
+@-moz-keyframes rock {
+  0% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  10% {
+    -moz-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+  20% {
+    -moz-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+  30% {
+    -moz-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  40% {
+    -moz-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+  50% {
+    -moz-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+  60% {
+    -moz-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+  }
+  70% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes rock {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+  20% {
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+  30% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  40% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+  60% {
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes rock {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  10% {
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+  20% {
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+  30% {
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  40% {
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+  50% {
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+  60% {
+    -moz-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+  }
+  70% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
 .riceDumpling {
   width: 312px;
   height: 305px;
@@ -170,4 +251,41 @@ body {
   -webkit-transform:  scale(0.8, 0.8) translate(-40%, -50%);
   transform:  scale(0.8, 0.8) translate(-40%, -50%);
   z-index: 200;
+}
+
+.text {
+  position: absolute;
+  top: 140px;
+  left: 180px;
+  width: 400px;
+  height: 370px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+}
+
+.text .caption {
+  width: 400px;
+  height: 240px;
+  background: url(../images/caption.png) left top no-repeat;
+  margin-left: 40px;
+}
+
+.text .to {
+  width: 400px;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.text .msg {
+  width: 400px;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.text .from {
+  width: 400px;
+  margin-top: 10px;
+  margin-left: 40px;
+  text-align: right;
 }

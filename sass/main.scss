@@ -3,7 +3,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import "compass/reset", "compass", "_variable";
+@import "compass", "_variable";
 
 body{
 	background: #000;
@@ -21,6 +21,10 @@ body{
 	height: 305px;
 	@include fixpos(184px, 700px);
 }
+.rdbox-rock{
+	@include animation(rock 2s infinite);	
+	@include rockm;
+}
 //粽子
 .riceDumpling{
 	width: 312px;
@@ -29,45 +33,81 @@ body{
 }
 //绳子
 .rope1{
-	@include ropepos(218px, 180px, url(../images/line_1.png));
+	@include whb(218px, 180px, url(../images/line_1.png));
 	@include fixpos(120px, 10px);
 }
 // 粽子肉
 .rdflesh{
-	@include ropepos(288px, 206px, url(../images/zzr_1.png));
+	@include whb(288px, 206px, url(../images/zzr_1.png));
 	@include background-size(288px 206px);
 	@include fixpos(34px, 50px);
 	z-index: 110;
 }
 // 左叶
 .rdll{
-	@include ropepos(114px, 266px, url(../images/leaf_left.png));
+	@include whb(114px, 266px, url(../images/leaf_left.png));
 	@include fixpos(-30px, 0px);
 	z-index: 1;
 }
 // 右叶
 .rdlr{
-	@include ropepos(318px, 336px, url(../images/leaf_right.png));
+	@include whb(318px, 336px, url(../images/leaf_right.png));
 	@include fixpos(-60px, 80px);
 	z-index: 111;
 }
 // 底叶
 .rdl{
-	@include ropepos(618px, 468px, url(../images/leaf_expand.png));
+	@include whb(618px, 468px, url(../images/leaf_expand.png));
 	@include fixpos(-45px, -150px);
 	z-index: 99;
 }
 // 字1
 .rdt1{
-	@include ropepos(180px, 100px, url(../images/t_jixiang.png));
-	@include simple-mediacy;
+	@include whb(180px, 100px, url(../images/t_jixiang.png));
+	@include mediacy(false, false);
 	@include simple-transform(.8,false,-40%,-50%);
 	z-index: 200;
 }
 // 字2
 .rdt2{
-	@include ropepos(180px, 100px, url(../images/t_ruyi.png));
-	@include simple-mediacy;
+	@include whb(180px, 100px, url(../images/t_ruyi.png));
+	@include mediacy(false, false);
 	@include simple-transform(.8,false,-40%,-50%);
 	z-index: 200;
+}
+// 祝福语文字
+.text{
+	@include simple-mediacy(140px, 180px);
+	@include whb(400px, 370px, false);
+	font-size: 14px;
+	line-height: 20px;
+	color: #333;
+}
+.text{
+	.caption{
+		@include whb(400px, 240px, url(../images/caption.png));
+		margin-left: 40px;
+	}
+}
+.text{
+	.to{
+		width: 400px;
+		margin-top: 10px;
+		margin-left: 40px;
+	}
+}
+.text{
+	.msg{
+		width: 400px;
+		margin-top: 10px;
+		margin-left: 40px;
+	}
+}
+.text{
+	.from{
+		width: 400px;
+		margin-top: 10px;
+		margin-left: 40px;
+		text-align: right;
+	}
 }
