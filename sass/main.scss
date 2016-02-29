@@ -1,8 +1,8 @@
+@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 @import "compass/reset", "compass", "_variable";
 
 body{
@@ -13,6 +13,61 @@ body{
 .main{
 	width: $body-mwidth;
 	height: $body-mheight;
-	background:#000 url(../images/bg.jpg) left top no-repeat;
+	background: #000 url(../images/bg.jpg) left top no-repeat;
 	@include mediacy;
+}
+.rdbox{
+	width: 312px;
+	height: 305px;
+	@include fixpos(184px, 700px);
+}
+//粽子
+.riceDumpling{
+	width: 312px;
+	height: 305px;
+	background: url(../images/zz.png) left top no-repeat;
+}
+//绳子
+.rope1{
+	@include ropepos(218px, 180px, url(../images/line_1.png));
+	@include fixpos(120px, 10px);
+}
+// 粽子肉
+.rdflesh{
+	@include ropepos(288px, 206px, url(../images/zzr_1.png));
+	@include background-size(288px 206px);
+	@include fixpos(34px, 50px);
+	z-index: 110;
+}
+// 左叶
+.rdll{
+	@include ropepos(114px, 266px, url(../images/leaf_left.png));
+	@include fixpos(-30px, 0px);
+	z-index: 1;
+}
+// 右叶
+.rdlr{
+	@include ropepos(318px, 336px, url(../images/leaf_right.png));
+	@include fixpos(-60px, 80px);
+	z-index: 111;
+}
+// 底叶
+.rdl{
+	@include ropepos(618px, 468px, url(../images/leaf_expand.png));
+	@include fixpos(-45px, -150px);
+	z-index: 99;
+}
+// 字1
+.rdt1{
+	@include ropepos(180px, 100px, url(../images/t_jixiang.png));
+	@include simple-mediacy;
+	@include simple-transform(.8,false,-40%,-50%);
+	z-index: 200;
+}
+// 字2
+.rdt2{
+	@include ropepos(180px, 100px, url(../images/t_ruyi.png));
+	@include simple-mediacy;
+	@include simple-transform(.8,false,-40%,-50%);
+	z-index: 200;
 }

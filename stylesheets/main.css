@@ -76,3 +76,98 @@ body {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+.rdbox {
+  width: 312px;
+  height: 305px;
+  position: absolute;
+  top: 184px;
+  left: 700px;
+}
+
+.riceDumpling {
+  width: 312px;
+  height: 305px;
+  background: url(../images/zz.png) left top no-repeat;
+}
+
+.rope1 {
+  width: 218px;
+  height: 180px;
+  background: url(../images/line_1.png) left top no-repeat;
+  position: absolute;
+  top: 120px;
+  left: 10px;
+}
+
+.rdflesh {
+  width: 288px;
+  height: 206px;
+  background: url(../images/zzr_1.png) left top no-repeat;
+  -moz-background-size: 288px 206px;
+  -o-background-size: 288px 206px;
+  -webkit-background-size: 288px 206px;
+  background-size: 288px 206px;
+  position: absolute;
+  top: 34px;
+  left: 50px;
+  z-index: 110;
+}
+
+.rdll {
+  width: 114px;
+  height: 266px;
+  background: url(../images/leaf_left.png) left top no-repeat;
+  position: absolute;
+  top: -30px;
+  left: 0px;
+  z-index: 1;
+}
+
+.rdlr {
+  width: 318px;
+  height: 336px;
+  background: url(../images/leaf_right.png) left top no-repeat;
+  position: absolute;
+  top: -60px;
+  left: 80px;
+  z-index: 111;
+}
+
+.rdl {
+  width: 618px;
+  height: 468px;
+  background: url(../images/leaf_expand.png) left top no-repeat;
+  position: absolute;
+  top: -45px;
+  left: -150px;
+  z-index: 99;
+}
+
+.rdt1 {
+  width: 180px;
+  height: 100px;
+  background: url(../images/t_jixiang.png) left top no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform:  scale(0.8, 0.8) translate(-40%, -50%);
+  -ms-transform:  scale(0.8, 0.8) translate(-40%, -50%);
+  -webkit-transform:  scale(0.8, 0.8) translate(-40%, -50%);
+  transform:  scale(0.8, 0.8) translate(-40%, -50%);
+  z-index: 200;
+}
+
+.rdt2 {
+  width: 180px;
+  height: 100px;
+  background: url(../images/t_ruyi.png) left top no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform:  scale(0.8, 0.8) translate(-40%, -50%);
+  -ms-transform:  scale(0.8, 0.8) translate(-40%, -50%);
+  -webkit-transform:  scale(0.8, 0.8) translate(-40%, -50%);
+  transform:  scale(0.8, 0.8) translate(-40%, -50%);
+  z-index: 200;
+}

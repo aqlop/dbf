@@ -1,11 +1,39 @@
+@charset "UTF-8";
+
 $body-mwidth : 1200px;
 $body-mheight : 600px;
 
-
-@mixin mediacy{
+@mixin simple-mediacy($tt: -50%, $tl: -50%){
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	@include translate(-50%, -50%);
 }
 
+@mixin mediacy($tt: -50%, $tl: -50%){
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	@include translate($tt, $tl);
+}
+
+@mixin fixpos($os-top: 0, $os-left: 0) {
+  position: absolute;
+  @if $os-top {
+    top: $os-top;
+  }
+  @if $os-left {
+    left: $os-left;
+  }
+}
+
+@mixin ropepos($r-width: 0, $r-height: 0, $r-bgi: 0) {
+  @if $r-width {
+    width: $r-width;
+  }
+  @if $r-height {
+    height: $r-height;
+  }
+  @if $r-bgi {
+    background: $r-bgi left top no-repeat;
+  }
+}
