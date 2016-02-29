@@ -88,7 +88,18 @@ body{
 	@include whb(318px, 336px, url(../images/leaf_right.png));
 	@include fixpos(-60px, 80px);
 	z-index: 111;
+	@include transform-origin(left, bottom);
+	@include scale(.8);
 	@include hiderd;
+}
+.rdlr-in{
+	opacity: 1;
+	@include rotate(-5deg);
+	@include simple-transform(.8, 5deg);
+}
+.rdlr-out{
+	opacity: 0;
+	@include simple-transform(.8, 15deg);
 }
 // 底叶
 .rdl{
@@ -96,6 +107,9 @@ body{
 	@include fixpos(-45px, -150px);
 	z-index: 99;
 	@include hiderd;
+}
+.rdl-in{
+	opacity: 1;
 }
 // 字1
 .rdt1{
