@@ -41,6 +41,11 @@ $body-mheight : 600px;
   }
 }
 
+@mixin hiderd{
+	opacity: 0;
+	@include transition(all 2s);
+}
+
 @mixin rockm{
 	@include keyframes(rock){
 		0%{

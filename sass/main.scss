@@ -30,11 +30,28 @@ body{
 	width: 312px;
 	height: 305px;
 	background: url(../images/zz.png) left top no-repeat;
+	@include transition(all 1s);
+}
+.rd-out{
+	opacity: .5;
+	@include scale(.5,.5);
 }
 //绳子
 .rope1{
 	@include whb(218px, 180px, url(../images/line_1.png));
 	@include fixpos(120px, 10px);
+}
+.rope2{
+	@include whb(219px, 159px, url(../images/line_2.png));
+	@include fixpos(158px, 10px);
+}
+.rope3{
+	@include whb(264px, 117px, url(../images/line_3.png));
+	@include fixpos(220px, 10px);
+}
+.rope4{
+	@include whb(288px, 56px, url(../images/line_4.png));
+	@include fixpos(290px, 10px);
 }
 // 粽子肉
 .rdflesh{
@@ -42,24 +59,43 @@ body{
 	@include background-size(288px 206px);
 	@include fixpos(34px, 50px);
 	z-index: 110;
+	@include hiderd;	
+	@include scale(.5);
+	@include transition(all 1s);
+}
+.rdf-in{
+	opacity: 1;
+	@include scale(1);
 }
 // 左叶
 .rdll{
 	@include whb(114px, 266px, url(../images/leaf_left.png));
 	@include fixpos(-30px, 0px);
 	z-index: 1;
+	@include transform-origin(left, bottom);
+	@include hiderd;
+}
+.rdll-in{
+	opacity: 1;
+	@include rotate(-5deg);
+}
+.rdll-out{
+	opacity: 0;
+	@include rotate(-15deg);
 }
 // 右叶
 .rdlr{
 	@include whb(318px, 336px, url(../images/leaf_right.png));
 	@include fixpos(-60px, 80px);
 	z-index: 111;
+	@include hiderd;
 }
 // 底叶
 .rdl{
 	@include whb(618px, 468px, url(../images/leaf_expand.png));
 	@include fixpos(-45px, -150px);
 	z-index: 99;
+	@include hiderd;
 }
 // 字1
 .rdt1{
@@ -67,6 +103,7 @@ body{
 	@include mediacy(false, false);
 	@include simple-transform(.8,false,-40%,-50%);
 	z-index: 200;
+	@include hiderd;
 }
 // 字2
 .rdt2{
@@ -74,6 +111,7 @@ body{
 	@include mediacy(false, false);
 	@include simple-transform(.8,false,-40%,-50%);
 	z-index: 200;
+	@include hiderd;
 }
 // 祝福语文字
 .text{
@@ -87,6 +125,8 @@ body{
 	.caption{
 		@include whb(400px, 240px, url(../images/caption.png));
 		margin-left: 40px;
+		opacity: 0;
+		@include transition(all 2s);
 	}
 }
 .text{
@@ -94,6 +134,8 @@ body{
 		width: 400px;
 		margin-top: 10px;
 		margin-left: 40px;
+		opacity: 0;
+		@include transition(all 2s .5s);
 	}
 }
 .text{
@@ -101,6 +143,8 @@ body{
 		width: 400px;
 		margin-top: 10px;
 		margin-left: 40px;
+		opacity: 0;
+		@include transition(all 2s 1s);
 	}
 }
 .text{
@@ -109,5 +153,17 @@ body{
 		margin-top: 10px;
 		margin-left: 40px;
 		text-align: right;
+		opacity: 0;
+		@include transition(all 2s 1.5s);
 	}
 }
+
+.text-in .caption,
+.text-in .to, 
+.text-in .msg, 
+.text-in .from{
+	opacity: 1;
+	margin-left: 0;
+}
+
+

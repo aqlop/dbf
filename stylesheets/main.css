@@ -170,6 +170,18 @@ body {
   width: 312px;
   height: 305px;
   background: url(../images/zz.png) left top no-repeat;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.rd-out {
+  opacity: .5;
+  -moz-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  -webkit-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
 }
 
 .rope1 {
@@ -178,6 +190,33 @@ body {
   background: url(../images/line_1.png) left top no-repeat;
   position: absolute;
   top: 120px;
+  left: 10px;
+}
+
+.rope2 {
+  width: 219px;
+  height: 159px;
+  background: url(../images/line_2.png) left top no-repeat;
+  position: absolute;
+  top: 158px;
+  left: 10px;
+}
+
+.rope3 {
+  width: 264px;
+  height: 117px;
+  background: url(../images/line_3.png) left top no-repeat;
+  position: absolute;
+  top: 220px;
+  left: 10px;
+}
+
+.rope4 {
+  width: 288px;
+  height: 56px;
+  background: url(../images/line_4.png) left top no-repeat;
+  position: absolute;
+  top: 290px;
   left: 10px;
 }
 
@@ -193,6 +232,27 @@ body {
   top: 34px;
   left: 50px;
   z-index: 110;
+  opacity: 0;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  -moz-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  -webkit-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.rdf-in {
+  opacity: 1;
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
 }
 
 .rdll {
@@ -203,6 +263,31 @@ body {
   top: -30px;
   left: 0px;
   z-index: 1;
+  -moz-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+  opacity: 0;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.rdll-in {
+  opacity: 1;
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+.rdll-out {
+  opacity: 0;
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
 }
 
 .rdlr {
@@ -213,6 +298,11 @@ body {
   top: -60px;
   left: 80px;
   z-index: 111;
+  opacity: 0;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 .rdl {
@@ -223,6 +313,11 @@ body {
   top: -45px;
   left: -150px;
   z-index: 99;
+  opacity: 0;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 .rdt1 {
@@ -237,6 +332,11 @@ body {
   -webkit-transform:  scale(0.8, 0.8) translate(-40%, -50%);
   transform:  scale(0.8, 0.8) translate(-40%, -50%);
   z-index: 200;
+  opacity: 0;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 .rdt2 {
@@ -251,6 +351,11 @@ body {
   -webkit-transform:  scale(0.8, 0.8) translate(-40%, -50%);
   transform:  scale(0.8, 0.8) translate(-40%, -50%);
   z-index: 200;
+  opacity: 0;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 .text {
@@ -269,18 +374,35 @@ body {
   height: 240px;
   background: url(../images/caption.png) left top no-repeat;
   margin-left: 40px;
+  opacity: 0;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 .text .to {
   width: 400px;
   margin-top: 10px;
   margin-left: 40px;
+  opacity: 0;
+  -moz-transition: all 2s 0.5s;
+  -o-transition: all 2s 0.5s;
+  -webkit-transition: all 2s;
+  -webkit-transition-delay: 0.5s;
+  transition: all 2s 0.5s;
 }
 
 .text .msg {
   width: 400px;
   margin-top: 10px;
   margin-left: 40px;
+  opacity: 0;
+  -moz-transition: all 2s 1s;
+  -o-transition: all 2s 1s;
+  -webkit-transition: all 2s;
+  -webkit-transition-delay: 1s;
+  transition: all 2s 1s;
 }
 
 .text .from {
@@ -288,4 +410,18 @@ body {
   margin-top: 10px;
   margin-left: 40px;
   text-align: right;
+  opacity: 0;
+  -moz-transition: all 2s 1.5s;
+  -o-transition: all 2s 1.5s;
+  -webkit-transition: all 2s;
+  -webkit-transition-delay: 1.5s;
+  transition: all 2s 1.5s;
+}
+
+.text-in .caption,
+.text-in .to,
+.text-in .msg,
+.text-in .from {
+  opacity: 1;
+  margin-left: 0;
 }
