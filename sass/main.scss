@@ -1,0 +1,18 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset", "compass", "_variable";
+
+body{
+	background: #000;
+	min-width: $body-mwidth;
+	min-height: $body-mheight;
+}
+.main{
+	width: $body-mwidth;
+	height: $body-mheight;
+	background:#000 url(../images/bg.jpg) left top no-repeat;
+	@include mediacy;
+}

@@ -1,0 +1,11 @@
+$body-mwidth : 1200px;
+$body-mheight : 600px;
+
+
+@mixin mediacy{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	@include translate(-50%, -50%);
+}
+
