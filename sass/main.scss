@@ -30,16 +30,19 @@ body{
 	width: 312px;
 	height: 305px;
 	background: url(../images/zz.png) left top no-repeat;
+	opacity: 1;
 	@include transition(all 1s);
 }
 .rd-out{
-	opacity: .5;
+	opacity: 0;
 	@include scale(.5,.5);
 }
 //绳子
 .rope1{
 	@include whb(218px, 180px, url(../images/line_1.png));
 	@include fixpos(120px, 10px);
+	z-index: 999;
+	cursor: pointer;
 }
 .rope2{
 	@include whb(219px, 159px, url(../images/line_2.png));
@@ -52,6 +55,9 @@ body{
 .rope4{
 	@include whb(288px, 56px, url(../images/line_4.png));
 	@include fixpos(290px, 10px);
+}
+.rope0{
+	display: none;
 }
 // 粽子肉
 .rdflesh{

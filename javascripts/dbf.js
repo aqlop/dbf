@@ -38,10 +38,38 @@ var s3 = new Timeline();
 
 s1.add(1, function(){
 	g('rdbox').className = 'rdbox rdbox-rock';
-}, 'int');
+	g('rope').onclick = function () {
+		s2.start();
+		g('rope').onclick = function(){
 
-// s1.add(5500, function(){
-// 	console.log('secocd');
-// }, 'int');
+		}
+	}
+});
+
+// 定义粽子展开的动画
+s2.add(1,function(){
+	g('rdbox').className = 'rdbox';
+})
+
+s2.add(100,function(){
+	g('rope').className = 'rope2';
+})
+s2.add(500,function(){
+	g('rope').className = 'rope3';
+})
+s2.add(1000,function(){
+	g('rope').className = 'rope4';
+})
+s2.add(1500,function(){
+	g('rope').className = 'rope0';
+})
+
+s2.add(2000,function(){
+	g('rd').className = 'riceDumpling rd-out';
+	g('rdf').className = 'rdfles rdf-in';
+})
+
+
+
 
 s1.start();

@@ -170,6 +170,7 @@ body {
   width: 312px;
   height: 305px;
   background: url(../images/zz.png) left top no-repeat;
+  opacity: 1;
   -moz-transition: all 1s;
   -o-transition: all 1s;
   -webkit-transition: all 1s;
@@ -177,7 +178,7 @@ body {
 }
 
 .rd-out {
-  opacity: .5;
+  opacity: 0;
   -moz-transform: scale(0.5, 0.5);
   -ms-transform: scale(0.5, 0.5);
   -webkit-transform: scale(0.5, 0.5);
@@ -191,6 +192,8 @@ body {
   position: absolute;
   top: 120px;
   left: 10px;
+  z-index: 999;
+  cursor: pointer;
 }
 
 .rope2 {
@@ -218,6 +221,10 @@ body {
   position: absolute;
   top: 290px;
   left: 10px;
+}
+
+.rope0 {
+  display: none;
 }
 
 .rdflesh {
