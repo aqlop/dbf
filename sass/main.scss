@@ -127,6 +127,9 @@ body{
 	z-index: 200;
 	@include hiderd;
 }
+.rdt-in{
+	opacity: 1;
+}
 // 祝福语文字
 .text{
 	@include simple-mediacy(140px, 180px);
@@ -180,4 +183,43 @@ body{
 	margin-left: 0;
 }
 
+// 粽子肉的旋转视角
+.rdf-view2{
+	background-image: url(../images/zzr_2.png);
+}
+.rdf-view3{
+	background-image: url(../images/zzr_3.png);
+}
+.rdf-view4{
+	background-image: url(../images/zzr_4.png);
+}
+.rdf-view5{
+	background-image: url(../images/zzr_1.png);
+	@include rotateY(180deg);
+}
 
+// 文字的视角
+.rdt-view1{
+	
+}
+.rdt-view1-mirror{
+	
+}
+.rdt-view2{
+	@include rdt-view(.8, 30deg, 8deg, -50px, 0);
+}
+.rdt-view2-mirror{
+	@include rdt-view(.7, 70deg, -8deg, 283px, -15px);
+}
+.rdt-view3{
+	@include rdt-view(.75, 49deg, 15deg, -94px, 0);
+}
+.rdt-view3-mirror{
+	@include rdt-view(.75, 49deg, -15deg, 118px, 0);
+}
+.rdt-view4{
+	@include rdt-view(.6, 50deg, 24deg, 196px, 10px);
+}
+.rdt-view4-mirror{
+	
+}

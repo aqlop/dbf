@@ -77,3 +77,7 @@ $body-mheight : 600px;
 		}
 	}
 }
+
+@mixin rdt-view($scale: false, $rotateY: false, $rotateZ: false,$trans-x: false, $trans-y: false){
+	@include create-transform(false, $scale, $scale, false, false, $rotateY, $rotateZ, false, $trans-x, $trans-y, false, false, false, false, false, false, false);
+}
