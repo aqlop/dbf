@@ -469,6 +469,10 @@ body {
   margin-left: 0;
 }
 
+.rdf-view1 {
+  background-image: url(../images/zzr_1.png);
+}
+
 .rdf-view2 {
   background-image: url(../images/zzr_2.png);
 }
@@ -481,7 +485,7 @@ body {
   background-image: url(../images/zzr_4.png);
 }
 
-.rdf-view5 {
+.rdf-view0 {
   background-image: url(../images/zzr_1.png);
   -moz-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);

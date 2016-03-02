@@ -66,10 +66,37 @@ s2.add(1500,function(){
 
 s2.add(2000,function(){
 	g('rd').className = 'riceDumpling rd-out';
-	g('rdf').className = 'rdfles rdf-in';
+	g('rdf').className = 'rdflesh rdf-in';
+	g('text').className = 'text text-in';
 })
 
+//粽子肉托盘旋转动画定义
+s3.add(1000,function(){
+	g('rdf').className = 'rdflesh rdf-in rdf-view1';
+})
+s3.add(1200,function(){
+	g('rdf').className = 'rdflesh rdf-in rdf-view2';
+})
+s3.add(1400,function(){
+	g('rdf').className = 'rdflesh rdf-in rdf-view3';
+})
+s3.add(1600,function(){
+	g('rdf').className = 'rdflesh rdf-in rdf-view4';
+})
+s3.add(1800,function(){
+	g('rdf').className = 'rdflesh rdf-in rdf-view0';
+})
+s3.add(3000,function(){
+	g('rdf').className = 'rdflesh rdf-in rdf-view4';
+})
+s3.add(3200,function(){
+	g('rdf').className = 'rdflesh rdf-in rdf-view3';
+})
+s3.add(3400,function(){
+	g('rdf').className = 'rdflesh rdf-in rdf-view2';
+})
+s3.add(3600,function(){
+	g('rdf').className = 'rdflesh rdf-in rdf-view1';
+})
 
-
-
-s1.start();
+s3.start();

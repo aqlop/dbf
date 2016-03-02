@@ -39,21 +39,21 @@ body{
 }
 //绳子
 .rope1{
-	@include whb(218px, 180px, url(../images/line_1.png));
+	@include whb(218px, 180px, "line_1.png");
 	@include fixpos(120px, 10px);
 	z-index: 999;
 	cursor: pointer;
 }
 .rope2{
-	@include whb(219px, 159px, url(../images/line_2.png));
+	@include whb(219px, 159px, "line_2.png");
 	@include fixpos(158px, 10px);
 }
 .rope3{
-	@include whb(264px, 117px, url(../images/line_3.png));
+	@include whb(264px, 117px, "line_3.png");
 	@include fixpos(220px, 10px);
 }
 .rope4{
-	@include whb(288px, 56px, url(../images/line_4.png));
+	@include whb(288px, 56px, "line_4.png");
 	@include fixpos(290px, 10px);
 }
 .rope0{
@@ -61,7 +61,7 @@ body{
 }
 // 粽子肉
 .rdflesh{
-	@include whb(288px, 206px, url(../images/zzr_1.png));
+	@include whb(288px, 206px, "zzr_1.png");
 	@include background-size(288px 206px);
 	@include fixpos(34px, 50px);
 	z-index: 110;
@@ -75,7 +75,7 @@ body{
 }
 // 左叶
 .rdll{
-	@include whb(114px, 266px, url(../images/leaf_left.png));
+	@include whb(114px, 266px, "leaf_left.png");
 	@include fixpos(-30px, 0px);
 	z-index: 1;
 	@include transform-origin(left, bottom);
@@ -91,7 +91,7 @@ body{
 }
 // 右叶
 .rdlr{
-	@include whb(318px, 336px, url(../images/leaf_right.png));
+	@include whb(318px, 336px, "leaf_right.png");
 	@include fixpos(-60px, 80px);
 	z-index: 111;
 	@include transform-origin(left, bottom);
@@ -109,7 +109,7 @@ body{
 }
 // 底叶
 .rdl{
-	@include whb(618px, 468px, url(../images/leaf_expand.png));
+	@include whb(618px, 468px, "leaf_expand.png");
 	@include fixpos(-45px, -150px);
 	z-index: 99;
 	@include hiderd;
@@ -119,7 +119,7 @@ body{
 }
 // 字1
 .rdt1{
-	@include whb(180px, 100px, url(../images/t_jixiang.png));
+	@include whb(180px, 100px, "t_jixiang.png");
 	@include mediacy(false, false);
 	@include simple-transform(.8,false,-40%,-50%);
 	z-index: 200;
@@ -127,7 +127,7 @@ body{
 }
 // 字2
 .rdt2{
-	@include whb(180px, 100px, url(../images/t_ruyi.png));
+	@include whb(180px, 100px, "t_ruyi.png");
 	@include mediacy(false, false);
 	@include simple-transform(.8,false,-40%,-50%);
 	z-index: 200;
@@ -146,7 +146,7 @@ body{
 }
 .text{
 	.caption{
-		@include whb(400px, 240px, url(../images/caption.png));
+		@include whb(400px, 240px, "caption.png");
 		margin-left: 40px;
 		opacity: 0;
 		@include transition(all 2s);
@@ -190,6 +190,9 @@ body{
 }
 
 // 粽子肉的旋转视角
+.rdf-view1{
+	background-image: url(../images/zzr_1.png);
+}
 .rdf-view2{
 	background-image: url(../images/zzr_2.png);
 }
@@ -199,7 +202,7 @@ body{
 .rdf-view4{
 	background-image: url(../images/zzr_4.png);
 }
-.rdf-view5{
+.rdf-view0{
 	background-image: url(../images/zzr_1.png);
 	@include rotateY(180deg);
 }

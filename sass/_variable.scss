@@ -29,7 +29,7 @@ $body-mheight : 600px;
   }
 }
 
-@mixin whb($r-width: 0, $r-height: 0, $r-bgi: 0) {
+@mixin whb($r-width: 0, $r-height: 0, $r-bgi: false) {
   @if $r-width {
     width: $r-width;
   }
@@ -37,7 +37,7 @@ $body-mheight : 600px;
     height: $r-height;
   }
   @if $r-bgi {
-    background: $r-bgi left top no-repeat;
+    background: url(../images/#{$r-bgi}) left top no-repeat;
   }
 }
 
