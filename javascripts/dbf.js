@@ -68,6 +68,17 @@ s2.add(2000,function(){
 	g('rd').className = 'riceDumpling rd-out';
 	g('rdf').className = 'rdflesh rdf-in';
 	g('text').className = 'text text-in';
+	g('rdll').className = 'rdll rdll-in';
+	g('rdlr').className = 'rdlr rdlr-in';
+
+	g('rdt1').className = 'rdt1 rdt-in';
+	g('rdt2').className = 'rdt2 rdt-view0-mirror';
+})
+s2.add(3000,function(){
+	g('rdll').className = 'rdll rdll-in rdll-out';
+	g('rdlr').className = 'rdlr rdlr-in rdlr-out';
+	g('rdl').className = 'rdl rdl-in';
+	s3.start();
 })
 
 //粽子肉托盘旋转动画定义
@@ -76,27 +87,29 @@ s3.add(1000,function(){
 })
 s3.add(1200,function(){
 	g('rdf').className = 'rdflesh rdf-in rdf-view2';
+	g('rdt1').className = 'rdt1 rdt-view2';
+	g('rdt2').className = 'rdt2 rdt-view2-mirror';
 })
-s3.add(1400,function(){
-	g('rdf').className = 'rdflesh rdf-in rdf-view3';
-})
-s3.add(1600,function(){
-	g('rdf').className = 'rdflesh rdf-in rdf-view4';
-})
-s3.add(1800,function(){
-	g('rdf').className = 'rdflesh rdf-in rdf-view0';
-})
-s3.add(3000,function(){
-	g('rdf').className = 'rdflesh rdf-in rdf-view4';
-})
-s3.add(3200,function(){
-	g('rdf').className = 'rdflesh rdf-in rdf-view3';
-})
-s3.add(3400,function(){
-	g('rdf').className = 'rdflesh rdf-in rdf-view2';
-})
-s3.add(3600,function(){
-	g('rdf').className = 'rdflesh rdf-in rdf-view1';
-})
+// s3.add(1400,function(){
+// 	g('rdf').className = 'rdflesh rdf-in rdf-view3';
+// })
+// s3.add(1600,function(){
+// 	g('rdf').className = 'rdflesh rdf-in rdf-view4';
+// })
+// s3.add(1800,function(){
+// 	g('rdf').className = 'rdflesh rdf-in rdf-view0';
+// })
+// s3.add(3000,function(){
+// 	g('rdf').className = 'rdflesh rdf-in rdf-view4';
+// })
+// s3.add(3200,function(){
+// 	g('rdf').className = 'rdflesh rdf-in rdf-view3';
+// })
+// s3.add(3400,function(){
+// 	g('rdf').className = 'rdflesh rdf-in rdf-view2';
+// })
+// s3.add(3600,function(){
+// 	g('rdf').className = 'rdflesh rdf-in rdf-view1';
+// })
 
-s3.start();
+s2.start(3000);

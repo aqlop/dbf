@@ -63,7 +63,7 @@ body{
 .rdflesh{
 	@include whb(288px, 206px, "zzr_1.png");
 	@include background-size(288px 206px);
-	@include fixpos(34px, 50px);
+	@include fixpos(54px, 50px);
 	z-index: 110;
 	@include hiderd;	
 	@include scale(.5);
@@ -208,11 +208,11 @@ body{
 }
 
 // 文字的视角
-.rdt-view1{
-	
+.rdt-view0{
+	@include scale(.8);
 }
-.rdt-view1-mirror{
-	
+.rdt-view0-mirror{
+	display: none;
 }
 .rdt-view2{
 	@include rdt-view(.8, 30deg, 8deg, -50px, 0);

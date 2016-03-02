@@ -236,7 +236,7 @@ body {
   -webkit-background-size: 288px 206px;
   background-size: 288px 206px;
   position: absolute;
-  top: 34px;
+  top: 54px;
   left: 50px;
   z-index: 110;
   opacity: 0;
@@ -492,37 +492,48 @@ body {
   transform: rotateY(180deg);
 }
 
+.rdt-view0 {
+  -moz-transform: scale(0.8, 0.8);
+  -ms-transform: scale(0.8, 0.8);
+  -webkit-transform: scale(0.8, 0.8);
+  transform: scale(0.8, 0.8);
+}
+
+.rdt-view0-mirror {
+  display: none;
+}
+
 .rdt-view2 {
-  -moz-transform:  scale(0.8, 0.8) rotateY(30deg) rotateZ(8deg) translate(-50px, 0);
-  -ms-transform:  scale(0.8, 0.8) rotateY(30deg) rotateZ(8deg) translate(-50px, 0);
-  -webkit-transform:  scale(0.8, 0.8) rotateY(30deg) rotateZ(8deg) translate(-50px, 0);
-  transform:  scale(0.8, 0.8) rotateY(30deg) rotateZ(8deg) translate(-50px, 0);
+  -moz-transform:  scaleZ(0.8) rotateY(30deg) rotateZ(8deg) translate(-50px, 0);
+  -ms-transform:  scaleZ(0.8) rotateY(30deg) rotateZ(8deg) translate(-50px, 0);
+  -webkit-transform:  scaleZ(0.8) rotateY(30deg) rotateZ(8deg) translate(-50px, 0);
+  transform:  scaleZ(0.8) rotateY(30deg) rotateZ(8deg) translate(-50px, 0);
 }
 
 .rdt-view2-mirror {
-  -moz-transform:  scale(0.7, 0.7) rotateY(70deg) rotateZ(-8deg) translate(283px, -15px);
-  -ms-transform:  scale(0.7, 0.7) rotateY(70deg) rotateZ(-8deg) translate(283px, -15px);
-  -webkit-transform:  scale(0.7, 0.7) rotateY(70deg) rotateZ(-8deg) translate(283px, -15px);
-  transform:  scale(0.7, 0.7) rotateY(70deg) rotateZ(-8deg) translate(283px, -15px);
+  -moz-transform:  scaleZ(0.7) rotateY(70deg) rotateZ(-8deg) translate(283px, -15px);
+  -ms-transform:  scaleZ(0.7) rotateY(70deg) rotateZ(-8deg) translate(283px, -15px);
+  -webkit-transform:  scaleZ(0.7) rotateY(70deg) rotateZ(-8deg) translate(283px, -15px);
+  transform:  scaleZ(0.7) rotateY(70deg) rotateZ(-8deg) translate(283px, -15px);
 }
 
 .rdt-view3 {
-  -moz-transform:  scale(0.75, 0.75) rotateY(49deg) rotateZ(15deg) translate(-94px, 0);
-  -ms-transform:  scale(0.75, 0.75) rotateY(49deg) rotateZ(15deg) translate(-94px, 0);
-  -webkit-transform:  scale(0.75, 0.75) rotateY(49deg) rotateZ(15deg) translate(-94px, 0);
-  transform:  scale(0.75, 0.75) rotateY(49deg) rotateZ(15deg) translate(-94px, 0);
+  -moz-transform:  scaleZ(0.75) rotateY(49deg) rotateZ(15deg) translate(-94px, 0);
+  -ms-transform:  scaleZ(0.75) rotateY(49deg) rotateZ(15deg) translate(-94px, 0);
+  -webkit-transform:  scaleZ(0.75) rotateY(49deg) rotateZ(15deg) translate(-94px, 0);
+  transform:  scaleZ(0.75) rotateY(49deg) rotateZ(15deg) translate(-94px, 0);
 }
 
 .rdt-view3-mirror {
-  -moz-transform:  scale(0.75, 0.75) rotateY(49deg) rotateZ(-15deg) translate(118px, 0);
-  -ms-transform:  scale(0.75, 0.75) rotateY(49deg) rotateZ(-15deg) translate(118px, 0);
-  -webkit-transform:  scale(0.75, 0.75) rotateY(49deg) rotateZ(-15deg) translate(118px, 0);
-  transform:  scale(0.75, 0.75) rotateY(49deg) rotateZ(-15deg) translate(118px, 0);
+  -moz-transform:  scaleZ(0.75) rotateY(49deg) rotateZ(-15deg) translate(118px, 0);
+  -ms-transform:  scaleZ(0.75) rotateY(49deg) rotateZ(-15deg) translate(118px, 0);
+  -webkit-transform:  scaleZ(0.75) rotateY(49deg) rotateZ(-15deg) translate(118px, 0);
+  transform:  scaleZ(0.75) rotateY(49deg) rotateZ(-15deg) translate(118px, 0);
 }
 
 .rdt-view4 {
-  -moz-transform:  scale(0.6, 0.6) rotateY(50deg) rotateZ(24deg) translate(196px, 10px);
-  -ms-transform:  scale(0.6, 0.6) rotateY(50deg) rotateZ(24deg) translate(196px, 10px);
-  -webkit-transform:  scale(0.6, 0.6) rotateY(50deg) rotateZ(24deg) translate(196px, 10px);
-  transform:  scale(0.6, 0.6) rotateY(50deg) rotateZ(24deg) translate(196px, 10px);
+  -moz-transform:  scaleZ(0.6) rotateY(50deg) rotateZ(24deg) translate(196px, 10px);
+  -ms-transform:  scaleZ(0.6) rotateY(50deg) rotateZ(24deg) translate(196px, 10px);
+  -webkit-transform:  scaleZ(0.6) rotateY(50deg) rotateZ(24deg) translate(196px, 10px);
+  transform:  scaleZ(0.6) rotateY(50deg) rotateZ(24deg) translate(196px, 10px);
 }
